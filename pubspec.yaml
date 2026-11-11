@@ -40,6 +40,7 @@ dependencies:
   get_it: ^9.3.0
   url_launcher: ^6.3.3
   intl: ^0.20.3
+  bloc_concurrency: ^0.3.0
 
 dev_dependencies:
   flutter_test:
