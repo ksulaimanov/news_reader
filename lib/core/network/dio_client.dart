@@ -30,6 +30,7 @@ AppException mapDioException(DioException e) {
     case DioExceptionType.connectionTimeout:
     case DioExceptionType.sendTimeout:
     case DioExceptionType.receiveTimeout:
+    case DioExceptionType.transformTimeout:
       return const NetworkException('Превышено время ожидания ответа');
     case DioExceptionType.connectionError:
       return const NetworkException('Нет соединения с интернетом');
