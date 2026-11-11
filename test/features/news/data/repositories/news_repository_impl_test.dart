@@ -29,7 +29,7 @@ void main() {
     repository = NewsRepositoryImpl(dataSource);
   });
 
-  void stubDataSource() => when(
+  When<Future<List<ArticleModel>>> stubDataSource() => when(
         () => dataSource.getTopStories(
           page: any(named: 'page'),
           pageSize: any(named: 'pageSize'),
