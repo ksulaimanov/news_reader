@@ -16,7 +16,7 @@ Dio createDio() {
   // Логи запросов только в debug-режиме (assert не выполняется в release).
   assert(() {
     dio.interceptors.add(
-      LogInterceptor(requestBody: false, responseBody: false),
+      LogInterceptor(requestHeader: false, responseHeader: false, requestBody: false, responseBody: false),
     );
     return true;
   }());
